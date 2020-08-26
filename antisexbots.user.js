@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         anti sex bots
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  try to take over the world!
 // @author       zenwaichi
 // @match        https://www.kongregate.com/games/*
