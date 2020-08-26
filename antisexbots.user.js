@@ -6,6 +6,7 @@
 // @author       zenwaichi
 // @match        https://www.kongregate.com/games/*
 // @grant        none
+// @updateURL
 // ==/UserScript==
 
 (function() {
@@ -14,8 +15,9 @@
         var target = document.querySelectorAll('.chat_message_window')[1],
             conf = { childList: true, subtree: true },
             func = (ml,ob)=>{for(var m of ml){
+                var _
                 if(m.addedNodes&&
-                   (var _=m.addedNodes[0],
+                   (_=m.addedNodes[0],
                     _.innerText.includes('freegirls.today')||
                     _.innerText.includes('My nickname J')||
                     _.innerText.includes('𝕗𝕣𝕖𝕖𝕘𝕚𝕣𝕝𝕤.𝕥𝕠𝕕𝕒𝕪')
