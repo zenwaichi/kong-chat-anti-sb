@@ -15,8 +15,12 @@
             conf = { childList: true, subtree: true },
             func = (ml,ob)=>{for(var m of ml){
                 if(m.addedNodes&&
-                   (m.addedNodes[0].innerText.includes('freegirls.today')||
-                    m.addedNodes[0].innerText.includes('My nickname J')))
+                   (var _=m.addedNodes[0],
+                    _.innerText.includes('freegirls.today')||
+                    _.innerText.includes('My nickname J')||
+                    _.innerText.includes('𝕗𝕣𝕖𝕖𝕘𝕚𝕣𝕝𝕤.𝕥𝕠𝕕𝕒𝕪')
+                   )
+                )
                 {m.addedNodes[0].style.display='none'}}};
         if(!target)throw('NO CHAT WINDOW')
         self.obs = new MutationObserver(func)
