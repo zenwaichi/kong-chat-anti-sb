@@ -21,7 +21,7 @@
                     var _
                     if(m.addedNodes&&
                       (_=m.addedNodes[0].innerText,
-                       _.includes('dateforsex.net')||
+                       _.includes('datingfree.us')||
                        _.includes('My nickname J')||
                        _.includes('𝕗𝕣𝕖𝕖𝕘𝕚𝕣𝕝𝕤.𝕥𝕠𝕕𝕒𝕪')
                       )
@@ -33,7 +33,6 @@
             };
         console.log('target = ',target)
         if(!target){
-            console.error('NO CHAT WINDOW')
             window.setTimeout(wrap,5000)
             return
         }
