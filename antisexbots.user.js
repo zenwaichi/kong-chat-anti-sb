@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         anti sex bots
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @description  try to take over the world!
 // @author       zenwaichi
+// @updateURL    https://zenwaichi.github.io/kong-chat-anti-sb/antisexbots.user.js
 // @match        https://www.kongregate.com/games/*
 // @match        http://www.kongregate.com/games/*
 // @grant        none
