@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         anti sex bots
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @description  try to take over the world!
 // @author       zenwaichi
 // @updateURL    https://zenwaichi.github.io/kong-chat-anti-sb/antisexbots.user.js
@@ -9,7 +9,6 @@
 // @match        https://www.kongregate.com/games/*
 // @match        http://www.kongregate.com/games/*
 // @grant        none
-// @updateURL
 // ==/UserScript==
 
 (function() {
@@ -24,6 +23,7 @@
                     if(m.addedNodes&&
                       (_=m.addedNodes[0].innerText,
                        _.includes('datingfree.us')||
+                       _.includes('gaysdate.club')||
                        _.includes('My nickname J')||
                        _.includes('𝕗𝕣𝕖𝕖𝕘𝕚𝕣𝕝𝕤.𝕥𝕠𝕕𝕒𝕪')
                       )
@@ -38,8 +38,8 @@
             window.setTimeout(wrap,5000)
             return
         }
-        self.obs = new MutationObserver(func)
-        self.obs.observe(target,conf)
+        var obs = new MutationObserver(func)
+        obs.observe(target,conf)
         console.log('anti sex bots ACTIVE')
     }
     window.setTimeout(wrap,10000)
